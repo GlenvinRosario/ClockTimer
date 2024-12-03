@@ -54,11 +54,10 @@
     gap: 15px;
 }
 
-/* Button styling */
-.increment-btn,
-.decrement-btn {
+/* Increment button styling */
+.increment-btn {
     flex: 1;
-    background: linear-gradient(135deg, #007bff, #0056b3); /* Dynamic gradient */
+    background: linear-gradient(135deg, #28a745, #218838); /* Green gradient */
     color: #fff; /* White text */
     border: none;
     border-radius: 10px;
@@ -69,13 +68,34 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.increment-btn:hover,
-.decrement-btn:hover {
-    background: linear-gradient(135deg, #0056b3, #003f7f); /* Darker gradient on hover */
+.increment-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34); /* Darker green gradient on hover */
     transform: translateY(-2px); /* Lift effect */
 }
 
-.increment-btn:active,
+.increment-btn:active {
+    transform: translateY(2px); /* Pressed effect */
+}
+
+/* Decrement button styling */
+.decrement-btn {
+    flex: 1;
+    background: linear-gradient(135deg, #dc3545, #c82333); /* Red gradient */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.decrement-btn:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130); /* Darker red gradient on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
 .decrement-btn:active {
     transform: translateY(2px); /* Pressed effect */
 }
